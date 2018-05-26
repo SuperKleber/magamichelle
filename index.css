@@ -397,7 +397,7 @@ table .esp
   }
   .swal-modal
   {
-    padding: auto;
+    padding: auto !important;
   }
   .menu
   {
