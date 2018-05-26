@@ -1,0 +1,19 @@
+{
+  "name": "magamichelle",
+  "version": "0.1.0",
+  "description": "Web de la maga michelle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperKleber/magamichelle.git"
+  },
+  "author": "Kevin Rivamontan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuperKleber/magamichelle/issues"
+  },
+  "homepage": "https://github.com/SuperKleber/magamichelle#readme"
+}
