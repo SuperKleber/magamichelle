@@ -2,230 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Love+Ya+Like+A+Sister|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <style media="screen">
-      body
-      {
-        background-image: url("images/background.jpg");
-        background-size: 150%;
-        font-family: "Montserrat";
-        font-weight: bold;
-        margin: 0;
-      }
 
-      .logotipo
-      {
-        font-family: 'Love Ya Like A Sister';
-        color: #935461;
-        font-size: 70px;
-        background: rgba(239, 242, 193, 0.85);
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        transition: 1s;
-        cursor: pointer;
-      }
-      .logotipo:hover
-      {
-        color: rgb(239, 242, 193);
-        background: #935461;
-      }
-      header
-      {
-        background: rgba(0,0,0,0.5);
-      }
-      .presentacion
-      {
-        height: 30REM;
-        color: #f1f2de;
-        font-size: 100px;
-        text-align: center;
-        font-family: 'Love Ya Like A Sister';
-        background: rgba(0,0,0,0.5);
-        padding: 20px 10px 0 10px;
-      }
-      .menu ul a
-      {
-        text-decoration: none;
-        color: white;
 
-        display: inline-block;
-        width: 100%;
-      }
-      .menu ul
-      {
-        padding: 0;
-        margin: 0;
-        height: 8vh;
-        line-height: 8vh;
-        width: 100%;
-        text-align: center;
-      }
-      .menu .ulinfo
-      {
-        border-radius: 0 0 0 50px;
-        background: #821a2d;
-      }
-      .menu .ulprec
-      {
-        background: black;
-      }
-      .menu .ulcont
-      {
-        border-radius: 0 0 50px 0;
-        background: #821a2d;
-      }
-      .menu
-      {
-        border-radius: 0 0 50px 50px;
-        display: flex;
-        justify-content: space-around;
-      }
-      .slides
-      {
-        display: flex;
-        justify-content: space-around;
-        background-color: rgba(0,0,0,0.5)
-
-      }
-      .slides .maga, .payasa
-      {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-      .maga
-      {
-        background-color: rgba(130, 26, 45,0.5);
-        border-radius: 50px 0 0 0;
-      }
-      .payasa
-      {
-        background-color: rgba(0,0,0,0.5);
-        border-radius: 0 50px 0 0;
-      }
-      .containerfoto
-      {
-        display: flex;
-        flex-direction: column;
-      }
-      .slides .foto
-      {
-        width: 460px;
-
-        border-radius: 20px 20px 0 0;
-        margin: 50px 0 0 0;
-      }
-
-      .payasita
-      {
-        width: 464px !important
-      }
-      .slides button
-      {
-        text-decoration: none;
-        background: rgb(239, 242, 193);
-        font-family: 'Annie Use Your Telescope';
-        font-size: 50px;
-        padding: 10px;
-        border: 0;
-        color: rgba(130, 26, 45,0.5);
-        font-weight: bold;
-        border-radius: 0 0 20px 20px;
-        margin-bottom: 50px;
-        cursor: pointer;
-      }
-      .info
-      {
-        padding: 50px 0 50px 0;
-        background-color: #fafafa;
-        text-align: center;
-      }
-      .icon
-      {
-        width: 130px;
-      }
-      .infomaga
-      {
-
-        background: rgb(56, 8, 21);
-      }
-      .infopayasa
-      {
-        background: #2b5470;
-      }
-      .infomaga,.infopayasa
-      {
-        padding:  50px 0 10px 0;
-        margin: 10px 50px 10px 50px;
-        border-radius: 20px;
-      }
-      .infomaga h1, .infopayasa h1
-      {
-        font-family: 'Love Ya Like A Sister';
-        color: white;
-
-      }
-      h3, h4
-      {
-        padding: 25px;
-        color: #f1f2de;
-      }
-
-      footer
-      {
-        background: black;
-        font-family:  'Annie Use Your Telescope';
-        font-size: 35px;
-        transition: 1s;
-
-      }
-      footer a
-      {
-        text-decoration: none;
-        color: white;
-      }
-      .contacto
-      {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-
-      }
-    </style>
     <title>Michelle</title>
 
   </head>
   <body>
     <header class="header">
-      <h1 class="logotipo">Michelle</h1>
-      <nav class="menu">
+      <a href="index.html" class="logotipo">Michelle</a>
+      <span class="burger icon-menu" id="burger">
+
+      </span>
+      <nav class="menu" id="menu">
         <ul class="ulinfo">
-          <a href="#info">Informacion</a>
+          <a id="ainfo" class="ainfo icon-info"href="#info">Informacion</a>
         </ul>
         <ul class="ulprec">
-          <a href="precios.html">Precios</a>
+          <a class="icon-coin-dollar"href="precios.html">Precios</a>
         </ul>
         <ul class="ulcont">
-          <a href="#footer">Contacto</a>
+          <a class="icon-user" href="#footer">Contacto</a>
         </ul>
       </nav>
     </header>
     <section class="presentacion">
-      Espectáculo de magia y de fiestas infantiles
+      <h1>
+        MAGIA Y ANIMACIÓN
+      </h1>
     </section>
-    <section class="slides">
+    <section class="slides" id="slides">
       <div class="maga">
         <div class="containerfoto">
           <img class="foto"src="images/magia4.jpg" alt="foto de maga Michelle">
-          <button type="button" name="button">Maga Michelle</button>
+          <button id="bmaga" type="button" name="button">Maga Michelle</button>
         </div>
       </div>
       <div class="payasa">
         <div class="containerfoto">
           <img class="foto payasita"src="images/payasa.jpg" alt="foto de payasa">
-          <button type="button" name="button">Payasa Michelle</button>
+          <button id="bpaya"type="button" name="button">Payasa Michelle</button>
         </div>
       </div>
     </section>
@@ -260,11 +78,76 @@
     </section>
     <footer id="footer">
       <div class="contacto">
-        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=59175887427&text=Hola%20Michelle%20vengo%20de%20tu%20pagina%20web,%20me%20interesa%20tu%20servicio"> Whatsapp</a>
-        <a class="facebook" href="https://www.facebook.com/animadoramichellecontreras/"> Facebook</a>
-        <a class="celular" href="tel:+59175887427">Celular :(+591) 75887427</a>
-        <a class="email"  href="mailto:keniamichellecontreras@gmail.com"> E-mail: keniamichellecontreras@gmail.com</a>
+        <a class="whatsapp icon-whatsapp" href="https://api.whatsapp.com/send?phone=59175887427&text=Hola%20Michelle%20vengo%20de%20tu%20pagina%20web,%20me%20interesa%20tu%20servicio"> Whatsapp</a>
+        <a class="facebook icon-facebook2" href="https://www.facebook.com/animadoramichellecontreras/"> Facebook</a>
+        <a class="celular icon-phone" href="tel:+59175887427">Celular :(+591) 75887427</a>
+        <a class="email icon-envelop"  href="mailto:keniamichellecontreras@gmail.com"> E-mail: keniamichellecontreras@gmail.com</a>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
+
+    </script>
+    <script>
+    const menu = document.getElementById("menu")
+    const toggle = () =>  scrollY>=87?   menu.classList.add("active") : menu.classList.remove("active")
+
+    </script>
+    <script>
+        const bm= document.getElementById("bmaga")
+        const bp= document.getElementById("bpaya")
+        const info = document.getElementById("ainfo")
+        // let txtm= "Ilusionismo Impresionante para todas las edades"
+        // let txtp="El mejor Show infantil que pudas imaginar"
+        // let icon1= 0
+        // let icon2= 0
+        let swm = () => swal(
+          {
+            title: "Soy Maga",
+            icon: icon1,
+            text: txtm
+          })
+        let swp = () => swal(
+        {
+          title: "Soy Payasa",
+          icon: icon2,
+          text: txtp
+        })
+        bm.addEventListener("click", swm)
+        bp.addEventListener("click", swp)
+        let consulta = window.matchMedia("(max-width:500px)")
+        const mq = () =>
+        {
+          if(consulta.matches)
+          {
+            txtm= "En el año 2006 a los 10 años empecé mi gusto por el ilusionismo, asistiendo a los primeros talleres de magia. Llevo animación y magia solidaria a albergues, niños con cancer, carcel de mujeres y porsupuesto apoyando las actividades solidarias de mi ciudad La Paz- Bolivia. "
+            txtp= "Desde nacimiento lleve al espectáculo en la sangre, gracias a que mi papá  me inculcó este bonito arte en el corazón y la mente"
+            icon1= "images/magiaicon.png"
+            icon2= "images/payasoicon.png"
+            window.removeEventListener("scroll", toggle)
+            info.href="#slides"
+          }
+          else
+          {
+            txtm= "Ilusionismo Impresionante para todas las edades"
+            txtp="El mejor Show infantil que pudas imaginar"
+            icon1= 0
+            icon2= 0
+            window.addEventListener("scroll", toggle)
+          }
+        }
+        mq()
+        consulta.addListener(mq)
+
+        const burger = document.getElementById("burger")
+        burger.addEventListener("click", ()=> menu.classList.toggle("active2"))
+        const body = document.body
+        const gest = new Hammer(body)
+        gest.on("swipeleft", ()=> menu.classList.remove("active2"));
+        gest.on("swiperight", ()=> menu.classList.add("active2"));
+    </script>
   </body>
 </html>

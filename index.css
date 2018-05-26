@@ -1,0 +1,446 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7f1yt5');
+  src:  url('fonts/icomoon.eot?7f1yt5#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7f1yt5') format('truetype'),
+    url('fonts/icomoon.woff?7f1yt5') format('woff'),
+    url('fonts/icomoon.svg?7f1yt5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coin-dollar:before {
+  content: "\e93b";
+  margin-right: 5px;
+}
+.icon-phone:before {
+  content: "\e942";
+  margin-right: 15px;
+}
+.icon-envelop:before {
+  content: "\e945";
+  margin-right: 5px;
+}
+.icon-user:before {
+  content: "\e971";
+  margin-right: 5px;
+}
+.icon-menu:before {
+  content: "\e9bd";
+
+}
+.icon-info:before {
+  content: "\ea0c";
+  margin-right: 5px;
+}
+.icon-facebook2:before {
+  content: "\ea91";
+  margin-right: 5px;
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+  margin-right: 5px;
+}
+body
+{
+  background-image: url("images/background.jpg");
+  background-size: 100%;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin: 0;
+}
+
+.logotipo
+{
+  font-family: 'Love Ya Like A Sister';
+  display: block;
+  width: 100%;
+  font-size: 70px;
+  background: rgba(239, 242, 193, 0.85);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: 1s;
+  cursor: pointer;
+  color: #935461;
+  text-decoration: none;
+}
+/* .logo
+{
+  color: #935461;
+  text-decoration: none;
+} */
+.logotipo:hover
+{
+  color: rgb(239, 242, 193);
+  background: #935461;
+}
+header
+{
+  background: rgba(0,0,0,0.5);
+}
+.presentacion
+{
+  width: 100%;
+  height: 30REM;
+  color: #f1f2de;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Love Ya Like A Sister';
+  background: rgba(0,0,0,0.5);
+  /* line-height: 250px; */
+  /* vertical-align: middle; */
+  display: table;
+}
+.presentacion h1
+{
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+
+}
+.menu ul a
+{
+  text-decoration: none;
+  color: white;
+
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.menu ul
+{
+  padding: 0;
+  margin: 0;
+  height: 8vh;
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.menu .ulinfo
+{
+  border-radius: 0 0 0 50px;
+  background: #821a2d;
+}
+.menu .ulprec
+{
+  background: black;
+}
+.menu .ulcont
+{
+  border-radius: 0 0 50px 0;
+  background: #821a2d;
+}
+.menu
+{
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.slides
+{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,0.5)
+
+}
+.slides .maga, .payasa
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.maga
+{
+  background-color: rgba(130, 26, 45,0.5);
+  border-radius: 50px 0 0 0;
+}
+.payasa
+{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0 50px 0 0;
+}
+.containerfoto
+{
+  display: flex;
+  flex-direction: column;
+}
+.slides .foto
+{
+  width: 460px;
+
+  border-radius: 20px 20px 0 0;
+  margin: 50px 0 0 0;
+}
+
+.payasita
+{
+  width: 464px !important
+}
+.slides button
+{
+  text-decoration: none;
+  background: rgb(239, 242, 193);
+  font-family: 'Annie Use Your Telescope';
+  font-size: 50px;
+  padding: 10px;
+  border: 0;
+  color: rgba(130, 26, 45,0.5);
+  font-weight: bold;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.info
+{
+  padding: 50px 0 50px 0;
+
+  text-align: center;
+}
+.icon
+{
+  width: 130px;
+  transition: .5s;
+}
+.icon:hover
+{
+  transform: rotate(360deg);
+}
+.infomaga
+{
+
+  background: rgb(56, 8, 21);
+}
+.infopayasa
+{
+  background: #2b5470;
+}
+.infomaga,.infopayasa
+{
+  padding:  50px 0 10px 0;
+  margin: 10px 50px 10px 50px;
+  border-radius: 20px;
+}
+.infomaga h1, .infopayasa h1
+{
+  font-family: 'Love Ya Like A Sister';
+  color: white;
+
+}
+h3, h4
+{
+  padding: 25px;
+  color: #f1f2de;
+}
+
+footer
+{
+  background: black;
+  font-family:  'Annie Use Your Telescope';
+  font-size: 25px;
+  transition: 1s;
+
+}
+footer a
+{
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+  margin: 10px;
+  transition: 0.2s;
+}
+footer a:hover
+{
+  background: #931639;
+}
+.contacto
+{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+.tablaprecios
+{
+  text-align: left;
+  border: 5px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+.tabla1 , .tabla2
+{
+  margin: 20px;
+  border: 5px solid black;
+  overflow: auto;
+}
+.header2
+{
+  margin-bottom: 100px;
+}
+.footer2
+{
+  margin-top: 100px;
+}
+.tablaprecios thead
+{
+  background: black;
+}
+.tablaprecios td, .tablaprecios th
+{
+  border: 2px solid black;
+  color: white;
+  background:  rgba(119, 15, 48,0.5);
+  font-size: 100%;
+  padding: 20px;
+}
+.titletable
+{
+  background: rgba(255,255,255,0.7);
+  padding: 20px;
+  text-align: center;
+}
+table .esp
+{
+  background: gold;
+  color: black;
+
+}
+.swal-modal
+{
+  padding: 20px 50px 5px 50px;
+}
+.swal-text
+{
+  font-family: 'Love Ya Like A Sister';
+  font-size: 25px;
+}
+.swal-button
+{
+  padding: 10px 25px 7px 25px;
+}
+.active
+{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.burger
+{
+  display: none
+}
+@media screen and (max-width: 950px)
+{
+  .slides
+  {
+    flex-direction: column;
+  }
+  .presentacion
+  {
+    font-size: 65px;
+  }
+  .maga , .payasa
+  {
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 550px)
+{
+  footer a
+  {
+    font-size: 18px;
+  }
+  .presentacion
+  {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width:500px)
+{
+  .swal-button-container
+  {
+    width: 100%;
+  }
+  .swal-button
+  {
+
+      padding: auto;
+      width: 100% !important;
+
+  }
+  .menu
+  {
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    top: 0;
+    background: rgba(232, 227, 197,0.6);
+    border-radius: 0;
+    width: 100%;
+    justify-content:center;
+    transition: .5s;
+
+    left: -100%;
+
+  }
+  .menu ul
+  {
+    border-radius: 0 !important;
+    background: rgba(0,0,0,0.3) !important ;
+    border: 2px solid white;
+    width: auto;
+    margin: 5px;
+    font-size: 25px;
+
+  }
+  .burger
+  {
+    position: fixed;
+    top: 20px;
+    left:20px;
+    display: inline;
+    color: white;
+    background: rgb(216, 89, 34);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .active2
+  {
+    left: 0%;
+  }
+  .info
+  {
+    display: none;
+  }
+  .slides .foto, button
+  {
+    width: 70% !important;
+  }
+  .containerfoto
+  {
+    align-items: center;
+  }
+}

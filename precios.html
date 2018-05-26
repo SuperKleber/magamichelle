@@ -1,0 +1,134 @@
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Love+Ya+Like+A+Sister|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+    <title>Michelle</title>
+
+  </head>
+  <body>
+    <header class="header header2" style="background: none;">
+        <a href="index.html" class="logotipo">Michelle</a>
+        <span class="burger icon-menu" id="burger">
+
+        </span>
+      <nav class="menu" id="menu">
+        <ul class="ulinfo">
+          <a id="ainfo"class="ainfo icon-info"href="index.html#info">Informacion</a>
+        </ul>
+        <ul class="ulprec">
+          <a class="icon-coin-dollar"href="precios.html">Precios</a>
+        </ul>
+        <ul class="ulcont">
+          <a class="icon-user" href="#footer">Contacto</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="precios">
+      <div class="contenedorprecios">
+        <section class="tabla1">
+          <table class="tablaprecios">
+          <h1 class="titletable">Animación: paquetes particulares</h1>
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th>Básico</th>
+              <th>Medio</th>
+              <th>Completo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="esp">Animación inluye:</td>
+              <td>Globoflexia/ Sonido</td>
+              <td>Sonido/ Pintacaritas/ Globoflexia</td>
+              <td>Sonido / Globoflexia/ Magia / Burbujas/ Escenario</td>
+            </tr>
+            <tr>
+              <td class="esp">Duracion:</td>
+              <td>2 Horas</td>
+              <td>3 Hora</td>
+              <td>Toda la fiesta</td>
+            </tr>
+            <tr>
+              <td class="esp">Personajes extra:</td>
+              <td>...</td>
+              <td>...</td>
+              <td>Frozen/ Bella/ Pirata Bruja/ Mujer Maravilla/ Batman/ Hombre araña/ IronMan /Mamanoela</td>
+            </tr>
+            <tr>
+              <td class="esp">Precio:</td>
+              <td>500bs</td>
+              <td>300bs</td>
+              <td>1200bs</td>
+            </tr>
+
+          </tbody>
+        </table>
+        </section>
+        <section class="tabla2">
+          <table class="tablaprecios">
+          <h1 class="titletable">Animación: paquetes para instituciones</h1>
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th>Paquete A</th>
+              <th>Paquete B</th>
+              <th>Colegio</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td class="esp"> Animación incluye: </td>
+              <td>Sonido / Globoflexia/ Magia</td>
+              <td>Sonido </td>
+              <td>Sonido / Globoflexia/ Magia / Títeres</td>
+            </tr>
+            <tr>
+              <td class="esp">duración: </td>
+              <td>1:30 Horas</td>
+              <td>1 Hora</td>
+              <td>1:30 Horas</td>
+            </tr>
+            <tr>
+              <td class="esp"> Precio: </td>
+              <td>500bs</td>
+              <td>300bs</td>
+              <td>1200bs</td>
+            </tr>
+          </tbody>
+        </table>
+        </section>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer2">
+      <div class="contacto">
+        <a class="whatsapp icon-whatsapp" href="https://api.whatsapp.com/send?phone=59175887427&text=Hola%20Michelle%20vengo%20de%20tu%20pagina%20web,%20me%20interesa%20tu%20servicio"> Whatsapp</a>
+        <a class="facebook icon-facebook2" href="https://www.facebook.com/animadoramichellecontreras/"> Facebook</a>
+        <a class="celular icon-phone" href="tel:+59175887427">Celular :(+591) 75887427</a>
+        <a class="email icon-envelop"  href="mailto:keniamichellecontreras@gmail.com"> E-mail: keniamichellecontreras@gmail.com</a>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
+
+    </script>
+    <script>
+        const menu = document.getElementById("menu")
+        const toggle = () =>  scrollY>=87?   menu.classList.add("active") : menu.classList.remove("active");
+        const info = document.getElementById("ainfo")
+        info.href= "index.html#slides";
+        window.addEventListener("scroll", toggle)
+        const burger = document.getElementById("burger")
+        burger.addEventListener("click", ()=> menu.classList.toggle("active2"))
+        const body = document.body
+        const gest = new Hammer(body)
+        gest.on("swipeleft", ()=> menu.classList.remove("active2"));
+        gest.on("swiperight", ()=> menu.classList.add("active2"));
+    </script>
+  </body>
+</html>
